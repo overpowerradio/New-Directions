@@ -2,24 +2,28 @@ body {
 	background-image: url("../images/black_thread.png");
 	color: #FFFFFF;
 }
+
 header {
 	color: #000000;
 	/*background-color: #0f0007;
 	background-image: url("../images/degree45.png");*/
 /*This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+
 #goldhead {
 	background-image: url("../images/w-g-banner.png");
 	background-size: 100% 125px;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	padding: 0;
 	height: 125px;
 }
+
 #navi {
 	margin-top: 59px;
 	text-align: right;
 }
+
 #navi2 {
 	margin-top: 59px;
 	text-align: left;
@@ -30,17 +34,47 @@ h1 {
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
 }
+.sectHeader {
+		
+	}
 
-#tag {
-	text-align: center;
+.tag {
+	/*text-align: center;*/
 	color: #f7e586;
+	margin-left: 10px;
+	
 }
+
+h2 {
+	font-family: 'Slabo 27px';
+	margin-left: 10px;
+}
+
+.grpDiv {
+	padding-top: 35px;
+}
+
+.supportPics {
+	width: 100%;
+	height: 228px;
+}
+
 #articleDisplay {
 	/*background-color: #0000e6;*/
 	background-image: url("../images/newspaper3.jpg");
-	/*background-size: 100%;*/
+	background-size: 100%;
 	color: #0f0007;
 }
-#support-group {
-	font-family: 'Slabo 27px';
+.articlePics {
+	width: 100%;
+	height: 228px;
+}
+.aArt {
+	color: white;
+	background-color: black;
+	line-height: 150%;
+}
+h3 {
+	font-size: 16px;
+
 }
