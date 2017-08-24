@@ -72,7 +72,7 @@ button {
   }
 
   &:hover::before {
-    border-top-color: $cyan; // Make borders visible
+    border-top-color: $cyan\\\; // Make borders visible
     border-right-color: $cyan;
     transition:
       width 0.25s ease-out, // Width expands first
