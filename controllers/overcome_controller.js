@@ -77,20 +77,4 @@ router.post("/profile/create", function(req, res) {
   });
 });
 
-// put route to devour a burger
-//router.put("/overcome/update", function(req, res) {
-  // update one of the burgers
-  //db.overcome.update({
-   // devoured: true
-  //},
-    //{
-      //where: {
-        //id: req.body.user_id
-      //}
-    //}
-  //).then(function(dbovercome) {
-    //res.redirect("/");
-  //});
-//});
-
 module.exports = router;

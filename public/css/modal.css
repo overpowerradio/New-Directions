@@ -1,0 +1,35 @@
+body {
+    padding-top: 90px;
+}
+
+
+/* General sizing */
+
+ul.dropdown-lr {
+    width: 300px;
+}
+
+
+/* mobile fix */
+
+@media (max-width: 768px) {
+    .dropdown-lr h3 {
+        color: #eee;
+    }
+    .dropdown-lr label {
+        color: #eee;
+    }
+}
+
+.modal-header,
+h4,
+.close {
+    background-color: #5cb85c;
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-footer {
+    background-color: #f9f9f9;
+}
