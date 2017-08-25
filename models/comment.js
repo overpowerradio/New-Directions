@@ -1,23 +1,29 @@
 module.exports = function(sequelize, DataTypes) {
-    var Comment = sequelize.define("Comment", {
+  var Comment = sequelize.define("Comment", {
+    
+    comment: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+      len: [1]
+    }
+  });
 
-        comment: {
-            type: DataTypes.TEXT,
-            allowNull: false,
-            len: [1]
-        }
+  Comment.associate = function(models) {
+    
+    Comment.belongsTo(models.User, {
+      foreignKey: {
+        allowNull: false
+      }
     });
 
-    Comment.associate = function(models) {
-
-        // A Comment can't be created without a User due to the foreign key constraint
-        Comment.belongsTo(models.User, {
-            foreignKey: {
-                allowNull: false
+  // A Comment can't be created without a User due to the foreign key constraint
+    Comment.belongsTo(models.User, {
+          foreignKey: {
+              allowNull: false
             }
-        });
+        });  
+    
+  };
 
-    };
-
-    return Comment;
+  return Comment;
 };

@@ -1,163 +1,80 @@
 body {
-    background-image: url("../images/background2.jpg");
-    background-attachment: fixed;
-    background-size: 100% 650px;
-    color: #FFFFFF;
+	background-image: url("../images/black_thread.png");
+	color: #FFFFFF;
 }
 
 header {
-    color: #000000;
-    /*background-color: #0f0007;
+	color: #000000;
+	/*background-color: #0f0007;
 	background-image: url("../images/degree45.png");*/
-    /*This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/*This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 #goldhead {
-    color: white;
-    font-weight: bold;
-    background-image: url("../images/banner1a.jpg");
-    background-size: 100% 98px;
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    padding: 0;
-    height: 98px;
-}
-
-a {
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
+	background-image: url("../images/w-g-banner.png");
+	background-size: 100% 125px;
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	padding: 0;
+	height: 125px;
 }
 
 #navi {
-    margin-top: 70px;
-    margin-left: 10px;
-    text-align: left;
+	margin-top: 59px;
+	text-align: right;
 }
 
 #navi2 {
-    margin-top: 40px;
-    text-align: right;
-    margin-right: 10px;
+	margin-top: 59px;
+	text-align: left;
 }
 
 h1 {
-    margin-top: 25px;
-    text-align: center;
-    color: black;
-    /*font-family: 'Baloo Bhaijaan', cursive;*/
-    font-family: 'Century Gothic', cursive;
-    /*font-family: 'Josefin sans', sans-serif;*/
+	margin-top: 59px;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
 }
-
-.sectHeader {}
+.sectHeader {
+		
+	}
 
 .tag {
-    /*text-align: center;*/
-    color: #f7e586;
-    margin-left: 10px;
+	/*text-align: center;*/
+	color: #f7e586;
+	margin-left: 10px;
+	
 }
 
 h2 {
-    font-family: 'Slabo 27px';
-    margin-left: 10px;
+	font-family: 'Slabo 27px';
+	margin-left: 10px;
 }
 
 .grpDiv {
-    padding-top: 35px;
+	padding-top: 35px;
 }
 
 .supportPics {
-    width: 100%;
-    height: 228px;
-}
-
-.caption {
-    background-color: #202020;
-    text-align: center;
-    font-family: 'Abel';
-}
-
-.caption2 {
-    background-color: #01276e;
-    text-align: center;
-    font-family: 'Abel';
+	width: 100%;
+	height: 228px;
 }
 
 #articleDisplay {
-    /*background-color: #0000e6;*/
-    background-image: url("../images/black_thread.png");
-    border-left: 0px;
-    border-right: 0px;
-    border-style: solid;
-    border-color: #caa37c;
-    /*padding-color: #caa37c;*/
+	/*background-color: #0000e6;*/
+	background-image: url("../images/newspaper3.jpg");
+	background-size: 100%;
+	color: #0f0007;
 }
-
 .articlePics {
-    width: 100%;
-    height: 228px;
+	width: 100%;
+	height: 228px;
 }
-
-
-/*.aArt {
+.aArt {
 	color: white;
 	background-color: black;
-}*/
-
+	line-height: 150%;
+}
 h3 {
-    font-size: 16px;
-}
+	font-size: 16px;
 
-.profilePic {
-    height: 200px;
-    width: auto;
-}
-
-.socialMedia {
-    height: 50px;
-    width: auto;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-right: 10px;
-}
-
-.member {
-    padding-top: 20px;
-}
-
-body {
-    padding-top: 90px;
-}
-
-
-/* General sizing */
-
-ul.dropdown-lr {
-    width: 300px;
-}
-
-
-/* mobile fix */
-
-@media (max-width: 768px) {
-    .dropdown-lr h3 {
-        color: #eee;
-    }
-    .dropdown-lr label {
-        color: #eee;
-    }
-}
-
-.modal-header,
-h4,
-.close {
-    background-color: #5cb85c;
-    color: white !important;
-    text-align: center;
-    font-size: 30px;
-}
-
-.modal-footer {
-    background-color: #f9f9f9;
 }
