@@ -33,13 +33,32 @@ module.exports = function(sequelize, DataTypes) {
      }
     },
 
-    social_media: {
+    facebook: {
       type: DataTypes.STRING,
       allowNull: true,
       validate: {
         len: [1]
      }
     },
+
+    instagram: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      validate: {
+        len: [1]
+     }
+    },
+    linkedIn: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      validate: {
+        len: [1]
+     }
+    },
+    onlineStatus: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+    }
 
   });
 
