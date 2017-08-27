@@ -12,16 +12,16 @@ header {
 /*This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-/*#goldhead {
+#goldhead {
 	color: white;
 	font-weight: bold;
 	background-image: url("../images/banner1a.jpg");
 	background-size: 100% 98px;
 	background-repeat: no-repeat;
 	/*background-attachment: fixed;*/
-	/*padding: 0;
+	padding: 0;
 	height: 98px;
-}/*
+}
 
 a {
 	font-size: 16px;
@@ -46,22 +46,23 @@ h1 {
 	text-align: center;
 	color: black;
 	/*font-family: 'Baloo Bhaijaan', cursive;*/
-	/*font-family: 'Century Gothic', cursive;
-	/*font-family: 'Josefin sans', sans-serif;
-}*/
+	font-family: 'Century Gothic', cursive;
+	/*font-family: 'Josefin sans', sans-serif;*/
+}
 .sectImg {
-		background-image: url("../images/banner1a.jpg");
-		background-size: 100% 98px;
-	}
-
+	background-image: url("../images/banner1a.jpg");
+ 	background-size: 100% 98px;
+ 	margin-top: 90px;
+  	 	}
+  		  
 .sectImg2 {
 	background-image: url("../images/black_thread.png");
 	border-left: 0px;
 	border-right: 0px;
-	border-bottom: 0px;
-	border-style: solid;
+ 	border-bottom: 0px;
+ 	border-style: solid;
     border-color: #caa37c;
-}
+ }
 
 .tag {
 	/*text-align: center;*/
