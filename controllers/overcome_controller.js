@@ -12,6 +12,17 @@ router.get("/", function(req, res) {
   res.render("home");
 });
 
+// router.get("/profile/:id", function(req, res) {
+//      // Find one Author with the id in req.params.id and return them to the user with res.json
+//     db.User.findOne({
+//       where: {
+//         id: req.params.id
+//       }
+//     }).then(function(dbAuthor) {
+//       res.redirect("profile");
+//     });
+//   });
+
 router.get("/cancer", function(req, res) {
   // send us to the next get function instead.
   res.render("cancer");
