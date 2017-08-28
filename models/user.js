@@ -8,10 +8,10 @@ module.exports = function(sequelize, DataTypes) {
         password: { type: DataTypes.STRING, allowNull: false },
         about: { type: DataTypes.TEXT },
         avatarImg: { type: DataTypes.TEXT },
-        location: { type: DataTypes.STRING, allowNull: true },
-        facebook: { type: DataTypes.STRING, allowNull: true },
-        instagram: { type: DataTypes.STRING, allowNull: true },
-        linkedIn: { type: DataTypes.STRING, allowNull: true },
+        location: { type: DataTypes.STRING, allowNull: true, validate: { len: [1] } },
+        facebook: { type: DataTypes.STRING, allowNull: true, validate: { len: [1] } },
+        instagram: { type: DataTypes.STRING, allowNull: true, validate: { len: [1] } },
+        linkedIn: { type: DataTypes.STRING, allowNull: true, validate: { len: [1] } },
         last_login: { type: DataTypes.DATE },
         status: { type: DataTypes.ENUM('active', 'inactive'), defaultValue: 'active' }
     });
