@@ -1,9 +1,9 @@
 var exports = module.exports = {}
-
+var session = require('express-session');
 
 exports.signup = function(req, res) {
 
-    res.render('signup');
+    res.render('profile');
 
 }
 
@@ -13,16 +13,12 @@ exports.signin = function(req, res) {
 
 }
 
-exports.dashboard = function(req, res) {
+exports.profile = function(req, res) {
 
-    res.render('dashboard', { firstname: req.user.firstname });
+    res.render('profile');
 
 }
 
 exports.logout = function(req, res) {
-
-    req.session.destroy(function(err) {
-        res.redirect('signin');
-    });
-
+    res.redirect('home');
 }

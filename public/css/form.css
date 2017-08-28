@@ -11,7 +11,7 @@
 }
 #contact{
     
-  font-family: 'Teko', sans-serif;
+    font-family: 'Teko', sans-serif;
   padding-top: 60px;
   width: 100%;
   width: 100vw;
@@ -19,7 +19,7 @@
   background: #3a6186; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #3a6186 , #d35513); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #8e3b16, #fd912b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color : #fff;    
+    color : #fff;    
 }
 .contact-section{
   padding-top: 40px;
@@ -55,6 +55,5 @@ textarea.form-control {
   width: 150px;
   background-color: transparent;
   color: #fff;
-  margin-bottom: 30px;
 
 }
