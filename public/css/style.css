@@ -49,9 +49,20 @@ h1 {
 	font-family: 'Century Gothic', cursive;
 	/*font-family: 'Josefin sans', sans-serif;*/
 }
-.sectHeader {
-		
-	}
+.sectImg {
+	background-image: url("../images/banner1a.jpg");
+ 	background-size: 100% 98px;
+ 	margin-top: 90px;
+  	 	}
+  		  
+.sectImg2 {
+	background-image: url("../images/black_thread.png");
+	border-left: 0px;
+	border-right: 0px;
+ 	border-bottom: 0px;
+ 	border-style: solid;
+    border-color: #caa37c;
+ }
 
 .tag {
 	/*text-align: center;*/
