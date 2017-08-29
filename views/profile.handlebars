@@ -17,15 +17,19 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="http://phpoll.com/register" class="dropdown-toggle" data-toggle="dropdown"><span>{{firstname}}</span><span class="caret"></span></a>
+                        <a href="http://phpoll.com/register" class="dropdown-toggle" data-toggle="dropdown"><span>{{user}}</span><span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-lr animated flipInX" role="menu">
                             <div class="col-lg-12">
-                                <div class="text-center"><h3><b>Yor are logged in</b></h3></div>
+                                <div class="text-center"><h3><b>You are logged in</b></h3></div>
 								<form id="ajax-register-form" id="logout" name="logout" action="/logout">
 									<div class="form-group">
 										<div class="row">
 											<div class="col-xs-6 col-xs-offset-3">
+											
+												Update Profile <!-- Create a button that has form action capabilities to forward to the form.handlebars page, carrying the identity of the current user. -->
+												<br>
 												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-info" value="log out">
+											
 											</div>
 										</div>
 									</div>
@@ -43,21 +47,21 @@
 	</nav>
 	</header>
 <div class="container">
-<h1>Welcome, {{firstname}}</h1>
+<h1>{{firstname}} {{lastname}}</h1>
 </div>
 
 <div class="container">
   <div class="row">
     <div class="col-xs-3">
     	<div>
-    		<img class="profilePic" src="./images/robertdj.jpg">
+    		<img class="profilePic" src="{{picture}}">
     	</div>
-   		 <h5 class="location">From: Manhattan, NY</h5>
+   		 <h5 class="location">From: {{location}}</h5>
 		<div>
 			<p>You can reach me:</p>
-			<a href=https://www.facebook.com/robertdowneyjr/><img src="./images/social1.png" class="socialMedia"></a>
-			<a href="https://www.instagram.com/robertdowneyjr/?hl=en"><img src="./images/social2.png" class="socialMedia"></a>
-			<a href="https://www.linkedin.com/in/robertdowneyjunior/"><img src="./images/social3.png" class="socialMedia"></a>
+			<a href="{{facebook}}"/><img src="./images/social1.png" class="socialMedia"></a>
+			<a href="{{instagram}}"><img src="./images/social2.png" class="socialMedia"></a>
+			<a href="{{linkedIn}}"><img src="./images/social3.png" class="socialMedia"></a>
 		</div>
 		<div class="member">
 			<p> I am a member of:</p>
@@ -85,6 +89,3 @@
 	</div>
   </div>
 </div>
-
-
-

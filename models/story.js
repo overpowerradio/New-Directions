@@ -1,12 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   var Story = sequelize.define("Story", {
     
-    story_text: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-      len: [1]
-    },
-
     category: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -14,17 +8,16 @@ module.exports = function(sequelize, DataTypes) {
         len: [1]
       }
     },
-
-
-    story_type: {
-      type: DataTypes.STRING,
+    story: {
+      type: DataTypes.TEXT,
       allowNull: false,
-      validate: {
-        len: [1]
-      }
+      len: [1]
     },
-
-
+    solution: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+      len: [1]
+    },
   });
 
   Story.associate = function(models) {

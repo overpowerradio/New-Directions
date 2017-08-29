@@ -1,10 +1,11 @@
 var exports = module.exports = {}
 var session = require('express-session');
+var db = require("../models/");
 
 exports.signup = function(req, res) {
 
-    res.render('profile');
-
+          res.render('form', {user: user.firstname});
+ 
 }
 
 exports.signin = function(req, res) {
