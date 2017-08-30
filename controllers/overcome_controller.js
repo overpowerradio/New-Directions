@@ -1,12 +1,8 @@
-// overcome controller 
-
 var express = require("express");
-
 var router = express.Router();
-// edits model to match sequelize
 var db = require("../models/");
 
-// get route -> index
+
 router.get("/", function(req, res) {
     // send us to the next get function instead.
     res.render("home");
@@ -44,50 +40,9 @@ router.get("/mentalhealth", function(req, res) {
 
 router.get("/form", function(req, res) {
    console.log("this what THIS is in the overcome_controller.js " + this);
+
+        res.render('form');
    
-      db.User.find({
-        where: {
-            id: 7
-        }
-    }).then(function(user) {
-        res.render('form', {user: user.firstname});
-    });
-});
-
-router.get("/profile/:id", function(req, res) {
-    db.User.find({
-        where: {id: req.params.id}
-    
-}).then(function(user){
-
-
-    res.render('profile', 
-        {firstname: user.firstname},
-        {picture: user.picture},
-        {location: user.location},
-        {facebook: user.facebook},
-        {instagram: user.instagram},
-        {linkedIn: user.linkedIn});
-
-        // {story: story.story},
-        // {solution: story.solution}
-})
-});
-
-
-
-
-// get route, edited to match sequelize
-router.get("/overcome", function(req, res) {
-    // replaced old function with sequelize function
-    db.overcome.findAll()
-        // used promise method to pass the burgers...
-        .then(function(dbovercome) {
-            console.log(dbovercome);
-            // into the main index, updating the page
-            var hbsObject = { user_name: dbovercome };
-            return res.render("index", hbsObject);
-        });
 });
 
 router.get("/:id", function(req, res) {
@@ -110,12 +65,15 @@ router.get("/:id", function(req, res) {
        })
 });
 
-
+//this is what I route to from the form.handlebars to be able to update the database and route to the profile page of the user.
 router.put("/:id", function(req, res) {
    
    var newUser = {
     avatarImg: req.body.avatarImg,
     location: req.body.location,
+    facebook: req.body.facebook,
+    instagram: req.body.instagram,
+    linkedIn: req.body.linkedIn
    };
    var userId = "";
    userId = req.params.id;
@@ -133,8 +91,7 @@ router.put("/:id", function(req, res) {
         }
     }).then(function(newUser){
 
-
-    res.render('profile', {
+     res.render('profile', {
             user: newUser.firstname,
             firstname: newUser.firstname, 
             lastname: newUser.lastname,
