@@ -50,8 +50,8 @@ app.use(passport.session()); // persistent login sessions
 require('./config/passport/passport.js')(passport, db.User);
 
 // listen on port 3000
-var port = process.env.JAWSDB_URL || 3000;
-db.sequelize.sync({ }).then(function() {
+var port = process.env.PORT || 3000;
+db.sequelize.sync({}).then(function() {
     app.listen(port);
     console.log("You are listening to port: " + port);
 });
