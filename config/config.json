@@ -1,22 +1,22 @@
 {
     "development": {
         "username": "root",
-        "password": "FirmCode921975",
+        "password": "root",
         "database": "overcome",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
     "test": {
-        "username": "root",
-        "password": "FirmCode921975",
-        "database": "database_test",
-        "host": "127.0.0.1",
+        "username": "",
+        "password": null,
+        "database": "",
+        "host": "",
         "dialect": "mysql"
     },
     "production": {
-        "username": "root",
-        "password": "FirmCode921975",
-        "database": "database_production",
+        "username": "",
+        "password": null,
+        "database": "",
         "host": "127.0.0.1",
         "dialect": "mysql"
     }
